@@ -38,9 +38,9 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
+    
+    
   </ol>
 </details>
 
@@ -172,11 +172,7 @@ To get a local copy up and running follow these simple steps.
 3.  Note that dev mode uses nodemon so that the server can be changed and restarted easily
 4.  It is important to note that you will have to setup environment variables to the appropriate endpoints, should you deploy this locally or somewhere else
 
-<!-- ROADMAP -->
 
-## Roadmap
-
-See the [open issues]() for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 
@@ -190,13 +186,7 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<!-- LICENSE -->
 
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-<!-- CONTACT -->
 
 
 
