@@ -13,6 +13,13 @@
   </p>
 </p>
 
+## Screenshots
+<img src="https://i.imgur.com/FOKwshQ.png"></img>
+<img src="https://i.imgur.com/lb6Mcjx.png"></img>
+<img src="https://i.imgur.com/npnqlZb.png"></img>
+<img src="https://i.imgur.com/QxxhIju.png"></img>
+<img src="https://i.imgur.com/OtICDoU.png"></img>
+
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
@@ -34,9 +41,6 @@
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#deployment">Deployment</a></li>
-    <li><a href="#screenshots">Screenshots</a></li>
   </ol>
 </details>
 
@@ -197,9 +201,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 
 
-## Screenshots
-<img src="https://i.imgur.com/FOKwshQ.png"></img>
-<img src="https://i.imgur.com/lb6Mcjx.png"></img>
-<img src="https://i.imgur.com/npnqlZb.png"></img>
-<img src="https://i.imgur.com/QxxhIju.png"></img>
-<img src="https://i.imgur.com/OtICDoU.png"></img>
+
