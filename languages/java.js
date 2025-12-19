@@ -9,24 +9,24 @@ const java = (input, res, name) => {
       let id = resp.stdout.substring(0, 12);
       exec(
         `docker cp ${name}.java ${id}:/usr/src/app/test.java && docker cp ${name}.txt ${id}:/usr/src/app/input.txt && docker exec ${id} bash -c "javac test.java && java test<input.txt"`,
-        { timeout: 15000, maxBuffer: 50000 }
+        { timeout: 15000, maxBuffer: 50000 },
       )
         .then((resp) => {
           res.json(resp);
           exec(`rm ${name}.java && rm ${name}.txt`).then((resp) =>
-            console.log("Files removed")
+            console.log("Files removed"),
           );
           exec(`docker kill ${id}`).then((resp) =>
-            console.log("Container Stopped")
+            console.log("Container Stopped"),
           );
         })
         .catch((err) => {
           res.json(err);
           exec(`rm ${name}.java && rm ${name}.txt`).then((resp) =>
-            console.log("Files removed")
+            console.log("Files removed"),
           );
           exec(`docker kill ${id}`).then((resp) =>
-            console.log("Container Stopped")
+            console.log("Container Stopped"),
           );
         });
     });

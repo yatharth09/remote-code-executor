@@ -9,24 +9,24 @@ const python = (input, res, name) => {
       let id = resp.stdout.substring(0, 12);
       exec(
         `docker cp ${name}.py ${id}:/usr/src/app/test.py && docker cp ${name}.txt ${id}:/usr/src/app/input.txt && docker exec ${id} bash -c "python3 test.py<input.txt"`,
-        { timeout: 20000, maxBuffer: 50000 }
+        { timeout: 20000, maxBuffer: 50000 },
       )
         .then((resp) => {
           res.json(resp);
           exec(`rm ${name}.py && rm ${name}.txt`).then((resp) =>
-            console.log("Files removed")
+            console.log("Files removed"),
           );
           exec(`docker kill ${id}`).then((resp) =>
-            console.log("Container Stopped")
+            console.log("Container Stopped"),
           );
         })
         .catch((err) => {
           res.json(err);
           exec(`rm ${name}.py && rm ${name}.txt`).then((resp) =>
-            console.log("Files removed")
+            console.log("Files removed"),
           );
           exec(`docker kill ${id}`).then((resp) =>
-            console.log("Container Stopped")
+            console.log("Container Stopped"),
           );
         });
     });

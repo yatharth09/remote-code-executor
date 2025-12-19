@@ -14,6 +14,7 @@
 </p>
 
 ## Screenshots
+
 <img src="https://i.imgur.com/FOKwshQ.png"></img>
 <img src="https://i.imgur.com/lb6Mcjx.png"></img>
 <img src="https://i.imgur.com/npnqlZb.png"></img>
@@ -63,7 +64,7 @@ Salient Features:
 ### Built With
 
 <a href="https://expressjs.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-ar21.svg" alt="express" height="40"/> </a><a href="https://reactjs.org/" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="react" width="60" height="40"/> </a><a href="https://nodejs.org" target="_blank"> <img src="https://img.icons8.com/color/48/000000/nodejs.png"/> </a>
-<a href="https://www.docker.com/" target="_blank"> <img src="https://www.docker.com/sites/default/files/d8/styles/role_icon/public/2019-07/Moby-logo.png?itok=sYH_JEaJ" alt="docker" width="58" height="50"/> </a> 
+<a href="https://www.docker.com/" target="_blank"> <img src="https://www.docker.com/sites/default/files/d8/styles/role_icon/public/2019-07/Moby-logo.png?itok=sYH_JEaJ" alt="docker" width="58" height="50"/> </a>
 
 <!-- GETTING STARTED -->
 
@@ -86,38 +87,42 @@ To get a local copy up and running follow these simple steps.
   ```
 
 ### Installation
+
 #### If you are on a Linux(preferably Ubuntu) Machine
+
 1. Clone the repo
    ```sh
-   git clone 
+   git clone
    ```
 2. Install NPM packages
    ```sh
    npm install
    ```
 3. To build the docker images
-   ```sh 
-   cd Dockerfiles 
+   ```sh
+   cd Dockerfiles
    ```
-   ```sh 
-   docker build -t cpp:v1 -f DockerCPP . 
+   ```sh
+   docker build -t cpp:v1 -f DockerCPP .
    ```
-   ```sh 
-   docker build -t python:v1 -f DockerPython . 
+   ```sh
+   docker build -t python:v1 -f DockerPython .
    ```
-   ```sh 
-   docker build -t java:v1 -f DockerJava . 
+   ```sh
+   docker build -t java:v1 -f DockerJava .
    ```
-   ```sh 
-   docker build -t go:v1 -f DockerGo . 
+   ```sh
+   docker build -t go:v1 -f DockerGo .
    ```
    ```sh
    docker build -t c:v1 -f DockerC .
    ```
+
 #### If you are on any other Machine
+
 1. Clone the repo
    ```sh
-   git clone 
+   git clone
    ```
 2. Install NPM packages
    ```sh
@@ -129,7 +134,7 @@ To get a local copy up and running follow these simple steps.
    ```
 4. Run the Docker Image
    ```sh
-   docker run --privileged=true -v /var/run/docker.sock:/var/run/docker.sock -d -p 3000:3000 rceserver:v1  
+   docker run --privileged=true -v /var/run/docker.sock:/var/run/docker.sock -d -p 3000:3000 rceserver:v1
    ```
 5. Create a shell to the created Docker Container
    ```sh
@@ -139,25 +144,25 @@ To get a local copy up and running follow these simple steps.
    docker exec -it <container_id> /bin/bash
    ```
 6. Build the Images inside the Container
-   ```sh 
-   cd Dockerfiles 
+   ```sh
+   cd Dockerfiles
    ```
-   ```sh 
-   docker build -t cpp:v1 -f DockerCPP . 
+   ```sh
+   docker build -t cpp:v1 -f DockerCPP .
    ```
-   ```sh 
-   docker build -t python:v1 -f DockerPython . 
+   ```sh
+   docker build -t python:v1 -f DockerPython .
    ```
-   ```sh 
-   docker build -t java:v1 -f DockerJava . 
+   ```sh
+   docker build -t java:v1 -f DockerJava .
    ```
-   ```sh 
-   docker build -t go:v1 -f DockerGo . 
+   ```sh
+   docker build -t go:v1 -f DockerGo .
    ```
    ```sh
    docker build -t c:v1 -f DockerC .
    ```
-<!-- USAGE EXAMPLES -->
+   <!-- USAGE EXAMPLES -->
 
 ## Usage
 
@@ -166,13 +171,11 @@ To get a local copy up and running follow these simple steps.
     npm run dev
     ```
 2.  To run the server in production mode
-    ```sh 
-    npm start 
+    ```sh
+    npm start
     ```
 3.  Note that dev mode uses nodemon so that the server can be changed and restarted easily
 4.  It is important to note that you will have to setup environment variables to the appropriate endpoints, should you deploy this locally or somewhere else
-
-
 
 <!-- CONTRIBUTING -->
 
@@ -185,10 +188,3 @@ Contributions are what make the open source community such an amazing place to b
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-
-
-
-
-
-

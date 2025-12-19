@@ -39,7 +39,7 @@ router
         } else {
           res.json({ error: "invalid code" });
           exec(`rm ${name}.cpp`).then((resp) =>
-            console.log("Input CPP Deleted")
+            console.log("Input CPP Deleted"),
           );
         }
       } else if (langid == 2) {
@@ -55,28 +55,22 @@ router
         } else {
           res.json({ error: "invalid code" });
           exec(`rm ${name}.java`).then((resp) =>
-            console.log("Input JAVA Deleted")
+            console.log("Input JAVA Deleted"),
           );
         }
       } else if (langid == 4) {
         if (validate(goList, code)) {
           goRun(input, res, name);
-        }
-        else {
+        } else {
           res.json({ error: "invalid code" });
-          exec(`rm ${name}.go`).then((resp) =>
-            console.log("Input go Deleted")
-          );
+          exec(`rm ${name}.go`).then((resp) => console.log("Input go Deleted"));
         }
       } else if (langid == 5) {
         if (validate(cList, code)) {
           cRun(input, res, name);
-        }
-        else {
+        } else {
           res.json({ error: "invalid code" });
-          exec(`rm ${name}.c`).then((resp) =>
-            console.log("Input c Deleted")
-          );
+          exec(`rm ${name}.c`).then((resp) => console.log("Input c Deleted"));
         }
       }
     });

@@ -1,4 +1,9 @@
-let pythonList = ["import os", "import subprocess","from os import","from subprocess import"];
+let pythonList = [
+  "import os",
+  "import subprocess",
+  "from os import",
+  "from subprocess import",
+];
 let cppList = ["popen", "fork", "system(", "unistd.h"];
 let cList = ["fork", "system("];
 let javaList = [
@@ -8,10 +13,7 @@ let javaList = [
   "ProcessBuilder",
   "start()",
 ];
-let goList = [
-  "os/exec",
-  "runtime"
-]
+let goList = ["os/exec", "runtime"];
 exports.pythonList = pythonList;
 exports.cppList = cppList;
 exports.javaList = javaList;
